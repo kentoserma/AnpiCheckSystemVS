@@ -30,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AnpiCheckSystemApp\admin.py" />
+    <Compile Include="AnpiCheckSystemApp\apps.py" />
+    <Compile Include="AnpiCheckSystemApp\migrations\__init__.py" />
+    <Compile Include="AnpiCheckSystemApp\models.py" />
+    <Compile Include="AnpiCheckSystemApp\tests.py" />
+    <Compile Include="AnpiCheckSystemApp\views.py" />
+    <Compile Include="AnpiCheckSystemApp\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="AnpiCheckSystem\__init__.py" />
     <Compile Include="AnpiCheckSystem\settings.py" />
@@ -37,9 +44,14 @@
     <Compile Include="AnpiCheckSystem\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AnpiCheckSystemApp\" />
+    <Folder Include="AnpiCheckSystemApp\migrations\" />
+    <Folder Include="AnpiCheckSystemApp\templates\" />
+    <Folder Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\" />
     <Folder Include="AnpiCheckSystem\" />
   </ItemGroup>
   <ItemGroup>
