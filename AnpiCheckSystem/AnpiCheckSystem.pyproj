@@ -44,12 +44,21 @@
     <Compile Include="AnpiCheckSystem\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\index.html" />
+    <Content Include="AnpiCheckSystemApp\static\css\site.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_header.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_login.css" />
+    <Content Include="AnpiCheckSystemApp\static\js\login.js" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\about.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\login.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AnpiCheckSystemApp\" />
     <Folder Include="AnpiCheckSystemApp\migrations\" />
+    <Folder Include="AnpiCheckSystemApp\static\" />
+    <Folder Include="AnpiCheckSystemApp\static\css\" />
+    <Folder Include="AnpiCheckSystemApp\static\js\" />
+    <Folder Include="AnpiCheckSystemApp\static\images\" />
     <Folder Include="AnpiCheckSystemApp\templates\" />
     <Folder Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\" />
     <Folder Include="AnpiCheckSystem\" />

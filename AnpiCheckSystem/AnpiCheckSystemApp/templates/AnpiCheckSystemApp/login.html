@@ -1,0 +1,50 @@
+﻿<html>
+    <head>
+        <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_header.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_login.css' %}" />
+        <!--<script type="text/javascript" src="{% static 'js/login.js' %}"></script>-->
+        <title>{{ title }}</title>
+    </head>
+    <body>
+
+
+   <!-- ヘッダー --> 
+   <header class="page-header"> 
+     <h1 id="title">安否確認システム ログイン画面</h1> 
+   </header> 
+ 
+ 
+     <!-- ログインフォーム --> 
+     <div id="login"> 
+ 
+
+         <!-- 社員番号入力フォーム --> 
+         <div id="EmployeeID"> 
+             <div class="sub_title">社員番号:</div> 
+             <input type="text" name="EmployeeID" id="EmployeeIDContent" placeholder="社員番号を入力してください。"> 
+        </div> 
+ 
+ 
+         <!-- パスワード入力フォーム --> 
+         <div id="Password"> 
+             <div class="sub_title">パスワード:</div> 
+             <input type="text" name="Password" id="PasswordContent" placeholder="パスワードを入力してください。"> 
+         </div> 
+ 
+ 
+         <!-- ログインボタン --> 
+         <a href="history.html"><p><input type="submit" class="login" value="ログイン" onclick="return OnButtonClickLogin();"></a></p> 
+ 
+ 
+         <!-- Deltusロゴマーク --> 
+         <div id="logo"> 
+             <p><img src="../static/images/d_mark.jpg"></p> 
+         </div> 
+ 
+
+       </div> 
+
+    </body>
+</html>

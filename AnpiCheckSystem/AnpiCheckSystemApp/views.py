@@ -3,15 +3,23 @@ from django.http import HttpResponse
 from datetime import datetime
 
 # Create your views here.
-def index(request):
+def login(request):
     now = datetime.now()
 
     return render(
         request,
-        "AnpiCheckSystemApp/index.html",  # Relative path from the 'templates' folder to the template file
+        "AnpiCheckSystemApp/login.html",  # Relative path from the 'templates' folder to the template file
         {
-            'title': "Hello Django",
-            "message":"Hello Django!",
-            "content":" on " + now.strftime("%A, %d %B, %Y at %X")
+            "title" : "ログイン"
+        }
+    )
+
+def about(request):
+    return render(
+        request,
+        "AnpiCheckSystemApp/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
         }
     )

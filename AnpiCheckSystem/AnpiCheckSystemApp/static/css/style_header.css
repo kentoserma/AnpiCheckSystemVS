@@ -1,0 +1,53 @@
+/*----------------------------------------------------------------*/
+/* ヘッダー用stylesheet                                            */
+/*----------------------------------------------------------------*/
+.message {
+    font-size: 200px;
+    color: red;
+}
+
+
+html, body {
+    font-family: sans-serif;
+}
+
+header {
+    margin: 0; /* 余白の削除 */
+    padding: 0; /* 余白の削除 */
+    /*list-style: none;*/ /*li要素のボッチを削除*/
+}
+
+header {
+    position: relative;
+    font-size: 6px; /*文字の大きさ*/
+    color: black; /*文字の色*/
+    line-height: 0; /*文字の余白を削除*/
+    background: #c0c0c0; /*背景色*/
+    height: 7vh; /*枠の大きさ*/
+    border: solid thin; /*枠の太さ*/
+    border-color: #0000DD; /*枠の色*/
+}
+
+#header_left {
+    /* ヘッダー左 */
+    position: absolute;
+    top: 30%; /*上部からの幅*/
+    left: 2%; /*左からの幅*/
+    font-weight: bold; /*文字の太さ：太字*/
+    color: #3366FF; /*文字の色*/
+}
+
+/* 画面タイトル */
+#title {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* ヘッダー左 */
+#header_right {
+    position: absolute;
+    top: 30%; /*上部からの幅*/
+    right: 2%; /*左からの幅*/
+    font-weight: bold; /*文字の太さ：太字*/
+    color: #3366FF; /*文字の色*/
+}
