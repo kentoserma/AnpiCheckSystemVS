@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_header.css">
+    <link rel="stylesheet" href="../static/css/style_footer.css">
+    <link rel="stylesheet" href="../static/css/style_mail_send.css">
+    <script src="../static/js/PageMove.js" charset="utf-8"></script>
+    <title>確認メール送信画面</title>
+  </head>
+
+  <body>
+    <div class="wapper">
+
+    <!-- ヘッダー -->
+    <header class="page-header">
+        <h2 id="header_left"><a href="manage_main.html">←戻る</a></h2>
+        <h1 id="title">安否確認システム 確認メール送信</h1>
+        <h2 id="header_right">送信</h2>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div id="main_content">
+        <table>
+            <tr id="SendDate">
+                <th>日付</th>
+                <td><input type="text" name="SendDate" placeholder="開始日を入力してください。"></td>
+            </tr>
+
+            <tr id="mail_title">
+                <th>件名</th>
+                <td><input type="text" name="mail_title"  placeholder="件名を入力してください。"></td>
+            </tr>
+
+            <tr id="message">
+                  <th>本文</th>
+                <td><textarea name="message" id="message_content" placeholder="本文を入力してください。"></textarea></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- フッター -->
+    <div id="page-footer">
+        <div id="history">
+            <a href="history.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
+        </div>
+        <div id="master">
+            <a href="manage_main.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
+        </div>
+        <div id="setting">
+            <a href="setting.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

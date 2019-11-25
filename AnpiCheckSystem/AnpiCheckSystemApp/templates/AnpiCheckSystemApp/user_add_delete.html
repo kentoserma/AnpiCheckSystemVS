@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_header.css">
+    <link rel="stylesheet" href="../static/css/style_footer.css">
+    <link rel="stylesheet" href="../static/css/style_user_add_delete.css">
+    <script src="../static/js/PageMove.js" charset="utf-8"></script>
+    <script src="../static/js/AddDelete.js" charset="utf-8"></script>
+    <title>登録画面</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+    <!-- ヘッダー -->
+    <header class="page-header">
+        <h2 id="header_left"><a href="manage_main.html">←戻る</a></h2>
+        <h1 id="title">安否確認システム 登録画面</h1>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div id="main-content">
+
+      <!-- 社員番号入力フォーム -->
+      <div class="InputForm">
+          <div class="sub_title">社員番号:</div>
+          <input type="text" name="EmployeeID" class="input" placeholder="社員番号を入力してください。" >
+      </div>
+
+      <!-- 氏名入力フォーム -->
+      <div class="InputForm">
+          <div class="sub_title">氏名:</div>
+          <input type="text" name="EmployeeName" class="input" placeholder="氏名を入力してください。">
+      </div>
+
+      <!-- 所属部署入力フォーム -->
+      <div class="InputForm">
+          <div class="sub_title">所属部署:</div>
+            <select class="input" name="example1" required>
+              <option value='' disabled selected class="first_child">所属部署を選択してください。</option>
+              <option value="サンプル2">選択肢のサンプル1</option>
+              <option value="サンプル3">選択肢のサンプル2</option>
+              <option value="サンプル4">選択肢のサンプル3</option>
+              <option value="サンプル5">選択肢のサンプル4</option>
+              <option value="サンプル6">選択肢のサンプル5</option>
+            </select>
+      </div>
+
+      <!-- パスワード入力フォーム -->
+      <div class="InputForm">
+          <div class="sub_title">パスワード:</div>
+          <input type="text" name="Password" class="input" placeholder="パスワードを入力してください。">
+      </div>
+
+    </div>
+
+    <!-- 登録・削除ボタン -->
+    <ul class="button_groupe">
+        <li id="add">
+            <button type="submit" class="button" name="add" value="code" onclick="return OnButtonClickAdd();">登録</button>
+        </li>
+
+        <li id="delete">
+            <button type="submit" class="button" name="delete" value="code" onclick="return OnButtonClickDelete();">削除</button>
+        </li>
+    </ui>
+
+    <!-- フッター -->
+    <div id="page-footer">
+        <div id="history">
+            <a href="history.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
+        </div>
+        <div id="master">
+            <a href="manage_main.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
+        </div>
+        <div id="setting">
+            <a href="setting.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

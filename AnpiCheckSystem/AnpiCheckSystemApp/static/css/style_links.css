@@ -1,0 +1,10 @@
+/*----------------------------------------------------------------*/
+/* 設定画面用stylesheet                                        */
+/*----------------------------------------------------------------*/
+#main-content{
+    margin-top:50px;
+    text-align: center;
+    font-size:20px;
+    color:#3366FF;
+    text-decoration: underline;
+}

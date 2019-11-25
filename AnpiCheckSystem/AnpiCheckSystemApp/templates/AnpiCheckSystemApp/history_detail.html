@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_header.css">
+    <link rel="stylesheet" href="../static/css/style_footer.css">
+    <link rel="stylesheet" href="../static/css/style_user_add_delete.css">
+    <link rel="stylesheet" href="../static/css/style_history_detail.css">
+    <script src="../static/js/PageMove.js" charset="utf-8"></script>
+    <title>連絡履歴_明細</title>
+  </head>
+
+  <body>
+    <div class="wapper">
+
+    <!-- ヘッダー -->
+    <header class="page-header">
+        <h2 id="header_left"><a href="history.html">←戻る</a></h2>
+        <h1 id="title">安否確認システム 履歴明細</h1>
+        <h2 id="header_right">回答</h2>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div id="main-content">
+
+      <!-- 届いたメールの内容 -->
+      <div class="sent_mail">
+        <table>
+            <tr id="SendDate">
+                <th>日付</th>
+                <td id="SendDate_content"></td>
+            </tr>
+
+            <tr id="mail_title">
+                <th>件名</th>
+                <td id="mail_title_content"></td>
+            </tr>
+
+            <tr id="answer_status">
+                <th>回答状況</th>
+                <td id=mait_title_content></td>
+            </tr>
+
+            <tr id="message">
+                  <th>本文</th>
+                <td id="message_content"></td>
+            </tr>
+        </table>
+      </div>
+
+
+      <!-- 回答ボックス -->
+      <div class="AnswerBox">
+
+        <!-- 本人状況フォーム -->
+        <div class="InputForm">
+            <div class="sub_title">本人:</div>
+            <select class="input" name="example1" required>
+              <option value='' disabled selected class="first_child">本人の状況を選択してください。</option>
+              <option value="status1">無事</option>
+              <option value="status2">ケガをしている</option>
+              <option value="status3">危険な状況にある</option>
+            </select>
+        </div>
+
+        <!-- 家族状況フォーム -->
+        <div class="InputForm">
+            <div class="sub_title">家族:</div>
+            <select class="input" name="example1" required>
+              <option value='' disabled selected class="first_child">家族の状況を選択してください。</option>
+              <option value="status1">無事</option>
+              <option value="status2">ケガをしている</option>
+              <option value="status3">危険な状況にある</option>
+            </select>
+        </div>
+
+        <!-- 家屋状況フォーム -->
+        <div class="InputForm">
+            <div class="sub_title">家屋:</div>
+            <select class="input" name="example1" required>
+              <option value='' disabled selected class="first_child">家屋の状況を選択してください。</option>
+              <option value="status1">無事</option>
+              <option value="status2">半壊</option>
+              <option value="status3">倒壊</option>
+            </select>
+        </div>
+
+      <!-- 出社可否状況フォーム -->
+      <div class="InputForm">
+          <div class="sub_title">出社可否:</div>
+          <select class="input" name="example1" required>
+            <option value='' disabled selected class="first_child">出社可否状況を選択してください。</option>
+            <option value="status1">可能</option>
+            <option value="status2">不可</option>
+          </select>
+      </div>
+
+      </div>
+    </div>
+
+
+    <!-- フッター -->
+    <div id="page-footer">
+        <div id="history">
+            <a href="history.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
+        </div>
+        <div id="master">
+            <a href="manage_main.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
+        </div>
+        <div id="setting">
+            <a href="setting.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

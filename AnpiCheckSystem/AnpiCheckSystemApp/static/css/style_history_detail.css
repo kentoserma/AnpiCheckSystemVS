@@ -1,0 +1,90 @@
+/*----------------------------------------------------------------*/
+/* 連絡履歴明細画面stylesheet                                      */
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* 日付　　　　　　　　　　                                         */
+/*----------------------------------------------------------------*/
+#SendDate tr{
+    height:1px;
+}
+
+#SendDate th{
+    font-size:15px;
+    border: thin solid #0000DD;
+}
+
+#SendDate td{
+    border: thin solid #0000DD;
+    height:1px;
+    width:120%;
+}
+
+#SendDate td:hover{
+  background: #ececd9;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+/* 件名　　　　　　　　                                         */
+/*----------------------------------------------------------------*/
+#mail_title tr{
+    height:1px;
+}
+
+#mail_title th{
+    font-size:15px;
+    border: thin solid #0000DD;
+}
+
+#mail_title td{
+    border: thin solid #0000DD;
+    height:1px;
+    width:120%;
+}
+
+#mail_title td:hover{
+  background: #ececd9;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+/* 回答状況　　　　　　　　                                         */
+/*----------------------------------------------------------------*/
+#answer_status tr{
+    height:50px;
+}
+
+#answer_status th{
+    font-size:8px;
+    border: thin solid #0000DD;
+}
+
+#answer_status td{
+    border: thin solid #0000DD;
+    height:50px;
+    width:120%;
+}
+
+#answer_status td:hover{
+  background: #ececd9;
+  cursor: pointer;
+}
+/*----------------------------------------------------------------*/
+/* メッセージ　　　　　　　                                         */
+/*----------------------------------------------------------------*/
+#message th{
+    height:200px;
+    border: thin solid #0000DD;
+}
+
+#message td{
+    border: thin solid #0000DD;
+    height:200px;
+    width:100%;
+}
+
+#message td:hover{
+  background: #ececd9;
+  cursor: pointer;
+}
