@@ -45,11 +45,37 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AnpiCheckSystemApp\static\css\site.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_footer.css" />
     <Content Include="AnpiCheckSystemApp\static\css\style_header.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_history_detail.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_links.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_list.css" />
     <Content Include="AnpiCheckSystemApp\static\css\style_login.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_mail_send.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_manage_result.css" />
+    <Content Include="AnpiCheckSystemApp\static\css\style_user_add_delete.css" />
+    <Content Include="AnpiCheckSystemApp\static\images\150px_history.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\150px_man.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\150px_setting.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\CompanyLogo.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\d_mark.jpg" />
+    <Content Include="AnpiCheckSystemApp\static\images\【original】history.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\【original】man.png" />
+    <Content Include="AnpiCheckSystemApp\static\images\【original】settings.png" />
+    <Content Include="AnpiCheckSystemApp\static\js\AddDelete.js" />
+    <Content Include="AnpiCheckSystemApp\static\js\AnswerStatus.js" />
+    <Content Include="AnpiCheckSystemApp\static\js\graph.js" />
     <Content Include="AnpiCheckSystemApp\static\js\login.js" />
+    <Content Include="AnpiCheckSystemApp\static\js\PageMove.js" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\about.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\history.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\history_detail.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\login.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\mail_send.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\manage_main.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\manage_result.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\setting.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\user_add_delete.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

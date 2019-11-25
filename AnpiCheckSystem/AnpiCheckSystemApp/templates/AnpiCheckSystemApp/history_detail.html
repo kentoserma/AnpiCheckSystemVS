@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style_header.css">
-    <link rel="stylesheet" href="../static/css/style_footer.css">
-    <link rel="stylesheet" href="../static/css/style_user_add_delete.css">
-    <link rel="stylesheet" href="../static/css/style_history_detail.css">
-    <script src="../static/js/PageMove.js" charset="utf-8"></script>
-    <title>連絡履歴_明細</title>
-  </head>
+    {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_header.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_footer.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_user_add_delete.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_history_detail.css' %}" />
+        <script type="text/javascript" src="{% static 'js/PageMove.js' %}"></script>
+    <title>{{ title }}</title>
+</head>
 
   <body>
     <div class="wapper">
 
     <!-- ヘッダー -->
     <header class="page-header">
-        <h2 id="header_left"><a href="history.html">←戻る</a></h2>
+        <h2 id="header_left"><a href="history">←戻る</a></h2>
         <h1 id="title">安否確認システム 履歴明細</h1>
         <h2 id="header_right">回答</h2>
     </header>
@@ -102,13 +103,13 @@
     <!-- フッター -->
     <div id="page-footer">
         <div id="history">
-            <a href="history.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
+            <a href="history"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
         </div>
         <div id="master">
-            <a href="manage_main.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
+            <a href="manage_main"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
         </div>
         <div id="setting">
-            <a href="setting.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
+            <a href="setting"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
         </div>
     </div>
     </div>

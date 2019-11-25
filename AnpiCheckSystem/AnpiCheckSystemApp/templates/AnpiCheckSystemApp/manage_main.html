@@ -2,11 +2,13 @@
 <html lang="ja">
   <head>
     <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style_header.css">
-    <link rel="stylesheet" href="../static/css/style_footer.css">
-    <link rel="stylesheet" href="../static/css/style_links.css">
-    <script src="../static/js/PageMove.js" charset="utf-8"></script>
-    <title>管理者画面</title>
+    {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_header.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_footer.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_links.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_history_detail.css' %}" />
+        <script type="text/javascript" src="{% static 'js/PageMove.js' %}"></script>
+    <title>{{ title }}</title>
   </head>
 
   <body>
@@ -23,22 +25,22 @@
     <div id="main-content">
 
         <!-- 各ページへのリンク -->
-        <p><a href="mail_send.html">安否確認メールの送信</a></p>
-        <p><a href="manage_result.html">集計結果の閲覧</a></p>
-        <p><a href="user_add_delete.html">ユーザの登録</a></p>
+        <p><a href="mail_send">安否確認メールの送信</a></p>
+        <p><a href="manage_result">集計結果の閲覧</a></p>
+        <p><a href="user_add_delete">ユーザの登録</a></p>
 
     </div>
 
     <!-- フッター -->
     <div id="page-footer">
         <div id="history">
-            <a href="history.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
+            <a href="history"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
         </div>
         <div id="master">
-            <a href="manage_main.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
+            <a href="manage_main"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
         </div>
         <div id="setting">
-            <a href="setting.html"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
+            <a href="setting"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
         </div>
     </div>
     </div>
