@@ -1,28 +1,24 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_header.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_footer.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_user_add_delete.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_history_detail.css' %}" />
-        <script type="text/javascript" src="{% static 'js/PageMove.js' %}"></script>
-    <title>{{ title }}</title>
-</head>
+{% extends "AnpiCheckSystemApp/layout.html" %}
 
-  <body>
-    <div class="wapper">
+{% load staticfiles %}
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_user_add_delete.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_history_detail.css' %}" />
+    <script type="text/javascript" src="{% static 'js/AnswerStatus.js' %}"></script>
+{% endblock %}
 
-    <!-- ヘッダー -->
-    <header class="page-header">
-        <h2 id="header_left"><a href="history">←戻る</a></h2>
-        <h1 id="title">安否確認システム 履歴明細</h1>
-        <h2 id="header_right">回答</h2>
-    </header>
 
-    <!-- メインコンテンツ -->
-    <div id="main-content">
+<!-- ヘッダー -->
+{% block header_left %}
+    <h2 id="header_left"><a href="history">←戻る</a></h2>
+{% endblock %}
+
+{% block header_right %}
+    <h2 id="header_right">回答</h2>
+{% endblock %}
+
+<!-- メインコンテンツ -->
+{% block content %}
 
       <!-- 届いたメールの内容 -->
       <div class="sent_mail">
@@ -48,7 +44,6 @@
             </tr>
         </table>
       </div>
-
 
       <!-- 回答ボックス -->
       <div class="AnswerBox">
@@ -95,23 +90,8 @@
             <option value="status2">不可</option>
           </select>
       </div>
-
-      </div>
     </div>
 
+{% endblock %}
 
-    <!-- フッター -->
-    <div id="page-footer">
-        <div id="history">
-            <a href="history"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
-        </div>
-        <div id="master">
-            <a href="manage_main"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
-        </div>
-        <div id="setting">
-            <a href="setting"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
-        </div>
-    </div>
-    </div>
-</body>
-</html>
+

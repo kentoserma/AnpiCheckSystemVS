@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_header.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_footer.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style_list.css' %}" />
-        <script type="text/javascript" src="{% static 'js/AnswerStatus.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/PageMove.js' %}"></script>
-    <title>{{ title }}</title>
-  </head>
+{% extends "AnpiCheckSystemApp/layout.html" %}
 
-  <body>
-    <div class="wapper">
+{% load staticfiles %}
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_list.css' %}" />
+    <script type="text/javascript" src="{% static 'js/AnswerStatus.js' %}"></script>
+{% endblock %}
 
-    <!-- ヘッダー -->
-    <header class="page-header">
-        <h2 id="header_left">←ダミー</h2>
-        <h1 id="title">安否確認システム 連絡履歴</h1>
-        <h2 id="header_right">ダミー→</h2>
-    </header>
+
+<!-- メインコンテンツ -->>
+{% block content %}
 
     <!-- 連絡履歴の一覧 -->
     <div id="history_list">
@@ -62,20 +51,4 @@
         </div>
     </div>
 
-    <!-- フッター -->
-    <div id="page-footer">
-        <div id="history">
-            <a href="history"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_history.png"><br>連絡履歴</button></a>
-        </div>
-        <div id="master">
-            <a href="manage_main"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_man.png"><br>管理者画面</button></a>
-        </div>
-        <div id="setting">
-            <a href="setting"><button type="submit" class="submit" name="submit" value="code"><img src="../static/images/150px_setting.png"><br>設定</button></a>
-        </div>
-    </div>
-
-    </div>
-
-</body>
-</html>
+{% endblock %}

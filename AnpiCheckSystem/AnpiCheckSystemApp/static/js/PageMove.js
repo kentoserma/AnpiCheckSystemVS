@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
       SettingBottun[1].style.borderColor ="#6699FF";
     }
 
-    else if(PageTitle.innerHTML == "安否確認システム 確認メール送信"){
+    else if (PageTitle.innerHTML == "安否確認システム 確認メール送信"){
       SettingBottun[1].style.backgroundColor = "#6699FF";
       SettingBottun[1].style.borderColor ="#6699FF";
     }

@@ -70,6 +70,7 @@
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\about.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\history.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\history_detail.html" />
+    <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\layout.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\login.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\mail_send.html" />
     <Content Include="AnpiCheckSystemApp\templates\AnpiCheckSystemApp\manage_main.html" />
