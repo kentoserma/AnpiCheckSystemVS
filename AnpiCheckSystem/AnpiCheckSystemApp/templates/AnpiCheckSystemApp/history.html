@@ -1,5 +1,9 @@
 {% extends "AnpiCheckSystemApp/layout.html" %}
+<!-------------------------------------------------->
+<!-- 連絡履歴画面                                 -->
+<!-------------------------------------------------->
 
+<!-- 外部リンク定義 -->
 {% load staticfiles %}
 {% block extra_head %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_list.css' %}" />
@@ -7,13 +11,11 @@
 {% endblock %}
 
 
-<!-- メインコンテンツ -->>
+<!-- メインコンテンツ -->
 {% block content %}
-
     <!-- 連絡履歴の一覧 -->
     <div id="history_list">
 
-        <!-- 連絡履歴 -->
         <div class="each_history_list">
             <li>台風19号関連ー安否確認（タイトル）</li>
             <li>回答状況：<div class="AnswerStatus">未回答</div></li>

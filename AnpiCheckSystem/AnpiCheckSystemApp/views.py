@@ -7,7 +7,7 @@ def login(request):
 
     return render(
         request,
-        "AnpiCheckSystemApp/login.html",  # Relative path from the 'templates' folder to the template file
+        "AnpiCheckSystemApp/login.html",
         {
             "title" : "ログイン"
         }

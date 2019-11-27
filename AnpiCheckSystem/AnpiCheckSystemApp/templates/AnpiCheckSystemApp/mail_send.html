@@ -1,5 +1,9 @@
 {% extends "AnpiCheckSystemApp/layout.html" %}
+<!-------------------------------------------------->
+<!-- 管理者画面_安否メール送信                    -->
+<!-------------------------------------------------->
 
+<!-- 外部リンク定義 -->
 {% load staticfiles %}
 {% block extra_head %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_mail_send.css' %}" />
@@ -17,21 +21,21 @@
 <!-- メインコンテンツ -->
 {% block content %}
 
-        <table>
-            <tr id="SendDate">
-                <th>日付</th>
-                <td><input type="text" name="SendDate" placeholder="開始日を入力してください。"></td>
-            </tr>
+    <table>
+        <tr id="SendDate">
+            <th>日付</th>
+            <td><input type="text" name="SendDate" placeholder="開始日を入力してください。"></td>
+        </tr>
 
-            <tr id="mail_title">
-                <th>件名</th>
-                <td><input type="text" name="mail_title"  placeholder="件名を入力してください。"></td>
-            </tr>
+        <tr id="mail_title">
+            <th>件名</th>
+            <td><input type="text" name="mail_title"  placeholder="件名を入力してください。"></td>
+        </tr>
 
-            <tr id="message">
-                  <th>本文</th>
-                <td><textarea name="message" id="message_content" placeholder="本文を入力してください。"></textarea></td>
-            </tr>
-        </table>
+        <tr id="message">
+            <th>本文</th>
+            <td><textarea name="message" id="message_content" placeholder="本文を入力してください。"></textarea></td>
+        </tr>
+    </table>
 
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends "AnpiCheckSystemApp/layout.html" %}
+<!-------------------------------------------------->
+<!-- 管理者画面_ユーザー登録                      -->
+<!-------------------------------------------------->
 
+<!-- 外部リンク定義 -->
 {% load staticfiles %}
 {% block extra_head %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_user_add_delete.css' %}" />
@@ -14,46 +18,46 @@
 <!-- メインコンテンツ -->
 {% block content %}
 
-      <!-- 社員番号入力フォーム -->
-      <div class="InputForm">
-          <div class="sub_title">社員番号:</div>
-          <input type="text" name="EmployeeID" class="input" placeholder="社員番号を入力してください。" >
-      </div>
+    <!-- 社員番号入力フォーム -->
+    <div class="InputForm">
+        <div class="sub_title">社員番号:</div>
+        <input type="text" name="EmployeeID" class="input" placeholder="社員番号を入力してください。" >
+    </div>
 
-      <!-- 氏名入力フォーム -->
-      <div class="InputForm">
-          <div class="sub_title">氏名:</div>
-          <input type="text" name="EmployeeName" class="input" placeholder="氏名を入力してください。">
-      </div>
+    <!-- 氏名入力フォーム -->
+    <div class="InputForm">
+        <div class="sub_title">氏名:</div>
+        <input type="text" name="EmployeeName" class="input" placeholder="氏名を入力してください。">
+    </div>
 
       <!-- 所属部署入力フォーム -->
-      <div class="InputForm">
-          <div class="sub_title">所属部署:</div>
-            <select class="input" name="example1" required>
-              <option value='' disabled selected class="first_child">所属部署を選択してください。</option>
-              <option value="サンプル2">選択肢のサンプル1</option>
-              <option value="サンプル3">選択肢のサンプル2</option>
-              <option value="サンプル4">選択肢のサンプル3</option>
-              <option value="サンプル5">選択肢のサンプル4</option>
-              <option value="サンプル6">選択肢のサンプル5</option>
-            </select>
-      </div>
+    <div class="InputForm">
+        <div class="sub_title">所属部署:</div>
+          <select class="input" name="example1" required>
+            <option value='' disabled selected class="first_child">所属部署を選択してください。</option>
+            <option value="サンプル2">選択肢のサンプル1</option>
+            <option value="サンプル3">選択肢のサンプル2</option>
+            <option value="サンプル4">選択肢のサンプル3</option>
+            <option value="サンプル5">選択肢のサンプル4</option>
+            <option value="サンプル6">選択肢のサンプル5</option>
+          </select>
+    </div>
 
       <!-- パスワード入力フォーム -->
-      <div class="InputForm">
-          <div class="sub_title">パスワード:</div>
-          <input type="text" name="Password" class="input" placeholder="パスワードを入力してください。">
-      </div>
+    <div class="InputForm">
+        <div class="sub_title">パスワード:</div>
+        <input type="text" name="Password" class="input" placeholder="パスワードを入力してください。">
+    </div>
 
     <!-- 登録・削除ボタン -->
     <ul class="button_groupe">
-        <li id="add">
-            <button type="submit" class="button" name="add" value="code" onclick="return OnButtonClickAdd();">登録</button>
-        </li>
+      <li id="add">
+          <button type="submit" class="button" name="add" value="code" onclick="return OnButtonClickAdd();">登録</button>
+      </li>
 
-        <li id="delete">
-            <button type="submit" class="button" name="delete" value="code" onclick="return OnButtonClickDelete();">削除</button>
-        </li>
+      <li id="delete">
+          <button type="submit" class="button" name="delete" value="code" onclick="return OnButtonClickDelete();">削除</button>
+      </li>
     </ui>
 
 {% endblock %}
